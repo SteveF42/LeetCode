@@ -3,11 +3,11 @@ import collections
 class Solution:
     def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
         #O(n) space
-        #O(n) time
-        
+        #O(nlogn) time
+
         table = collections.defaultdict(list)
         for string in strs:
-            s = ''.join(sorted(string))
+            s = ''.join(sorted(string)) #O(nlogn)
             table[s].append(string)
         
         res = []
