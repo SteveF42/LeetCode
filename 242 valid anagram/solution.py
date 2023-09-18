@@ -1,21 +1,21 @@
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        dic = {}
+        dic = {} #O(s) space
         
-        for c in list(s.replace(' ','')):
+        for c in list(s.replace(' ','')): #O(s)
             if c in dic:
                 dic[c] += 1
             else:
                 dic[c] = 1
         
-        for c in list(t.replace(' ','')):
+        for c in list(t.replace(' ','')): #O(t)
             if c in dic and dic[c] != 0:
                 dic[c] -= 1
             else:
                 return False
         
-        for c in dic:
+        for c in dic: #O(t)
             if dic[c] > 0:
                 return False
         return True
