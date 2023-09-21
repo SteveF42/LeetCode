@@ -1,5 +1,7 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
+        # O(1) space complexity
+        # O(n) time complexity
         l = 0
         r = len(s)-1
         def isAlphaNum(s: str)-> bool:
