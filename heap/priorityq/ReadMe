@@ -1,0 +1,6 @@
+There is a multi-core CPU. 
+A single-core in this CPU can execute only a single task at a given time, 
+so if two tasks need to be executed simultaneously, 
+we will need at least two different cores to process them.
+
+came up during a coding exam wanted to write out the solution
