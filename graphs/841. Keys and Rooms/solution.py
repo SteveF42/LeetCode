@@ -1,5 +1,7 @@
 class Solution:
     def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
+        # O(n) time
+        # O(n) space
         
         visit = set()
         def dfs(i):
