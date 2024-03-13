@@ -7,10 +7,10 @@ class Solution:
                 pos.append(i)
             else:
                 neg.append(i)
-        
+
         res = []
-        for i,j in zip(pos,neg):
+        for i, j in zip(pos, neg):
             res.append(i)
             res.append(j)
-        
+
         return res
